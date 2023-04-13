@@ -53,7 +53,7 @@ jobs:
         cat README.md
         echo "# Welcome to my resume's CI/CD" > README.md
         echo "This repository keeps my resume up to date, today's date." >> README.md
-        echo "You will find [the most recent builds](output/directory) of my resume here." >> README.md
+        echo "You will find [the most recent builds](output/) of my resume here." >> README.md
         echo "* * *" >> README.md
         echo " " >> README.md
         echo "## The current date:  " >> README.md
