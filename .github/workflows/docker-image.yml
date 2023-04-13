@@ -52,7 +52,8 @@ jobs:
       run: |
         cat README.md
         echo "# Welcome to my resume's CI/CD" > README.md
-        echo "This repository keeps my resume up to date, today's date." >> README.md
+        echo "This repository keeps my resume up to date. Builds are done daily." >> README.md
+        echo " " >> README.md
         echo "You will find [the most recent builds](output/) of my resume here." >> README.md
         echo "* * *" >> README.md
         echo " " >> README.md
@@ -78,5 +79,3 @@ jobs:
       run: |
         pwd
         ls -Rl
-
-
