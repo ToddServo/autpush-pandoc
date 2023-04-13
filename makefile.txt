@@ -1,0 +1,2 @@
+compile:
+	pandoc --from markdown input/resume.md --to pdf --template=styles/template.tex --pdf-engine=xelatex -o output/resume22.pdf; \
