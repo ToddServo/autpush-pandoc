@@ -1,8 +1,8 @@
 name: Docker Image CI
 
-on:
+#on:
   # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-  schedule:
+#  schedule:
     # The shortest interval you can run scheduled workflows is once every 5 minutes.
     # Note: The schedule event can be delayed during periods of high loads of GitHub Actions workflow runs. 
     # High load times include the start of every hour. 
@@ -12,13 +12,13 @@ on:
     # - cron: '*/5 * * * *'
     # Currently: every three days at 10:23am UTC.
     # - cron: "23 10 */3 * *"
-     - cron: "*/10 * * * *"
+#     - cron: "*/10 * * * *"
 
-#on:
-#  push:
-#    branches: [ "main" ]
-#  pull_request:
-#    branches: [ "main" ]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
 
