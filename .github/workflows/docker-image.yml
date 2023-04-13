@@ -12,7 +12,7 @@ name: Docker Image CI
     # - cron: '*/5 * * * *'
     # Currently: every three days at 10:23am UTC.
     # - cron: "23 10 */3 * *"
-#    - cron: "*/10 * * * *"
+    - cron: "*/20 * * * *"
 
 on:
   push:
@@ -56,6 +56,7 @@ jobs:
           echo "* * *" >> README.md
           echo " " >> README.md
           echo "## The current date:  " >> README.md
+
       - name:
           Publish date to README.md
           # NOTE: UTC is adjusted to local MNT time. Please correct based on local standards.
@@ -63,6 +64,12 @@ jobs:
           cat README.md
           echo " $(date -d '-6 hour' +"%m/%d/%Y") " >> README.md
           echo "   " >> README.md
+          echo "  " >> README.md
+          echo "  " >> README.md
+          echo " TIME PUBLISHED IS ALSO: " >> README.md
+          echo "  " >> README.md
+          echo " $(date -d '-6 hour' +"%I:%M.%S") " >> README.md
+          echo "  " >> README.md
           echo "  " >> README.md
           cat README.md
 
