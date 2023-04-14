@@ -11,6 +11,6 @@ You will find [the most recent builds](output/) of my resume here.
   
  TIME PUBLISHED IS ALSO: 
   
- 05:54.02 
+ 07:29.45 
   
   
