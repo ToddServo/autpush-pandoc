@@ -5,7 +5,7 @@ You will find [the most recent builds](output/) of my resume here.
 * * *
  
 ## The current date:  
- 01/16/2024 
+ 01/19/2024 
    
   
   
