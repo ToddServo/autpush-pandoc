@@ -11,8 +11,10 @@ on:
     # Example: every 5 minutes.
     # - cron: '*/5 * * * *'
     # Currently: every three days at 10:23am UTC.
-    - cron: "23 10 */3 * *"
+    #- cron: "23 10 */3 * *"
     # - cron: "*/20 * * * *"
+    # ONCE A YEAR
+     - cron: "0 0 1 1 *"
 
 #on:
 #  push:
@@ -25,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Test initial directory contents
         run: |
           pwd
@@ -41,7 +43,7 @@ jobs:
           pwd
           ls -al output
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: Completed Resumes
           path: output/
